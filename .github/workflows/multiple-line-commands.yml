@@ -1,0 +1,11 @@
+name: Multiple line commands
+on: workflow_dispatch
+jobs:
+  multiple-command-line-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run multiple command lines at once
+        run: |
+            echo "First output"
+            echo "Second output"
+            echo "Third output"
